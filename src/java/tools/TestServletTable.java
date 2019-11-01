@@ -36,10 +36,11 @@ public class TestServletTable extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             SessionFactory factory = HibernateUtil.getSessionFactory();
-            
-            
+
             out.println("<!DOCTYPE html>");
+            
             out.println("<html>");
+            
             out.println("<head>");
             out.println("<style>");
             out.println(" table, th, td {");
@@ -49,11 +50,12 @@ public class TestServletTable extends HttpServlet {
             out.println(" padding: 5px;");
             out.println(" text-align: left; }");
             out.println("</style>");
-            out.println("<title>Servlet TestServletTable</title>");            
+            out.println("<title>Servlet TestServletTable</title>");
             out.println("</head>");
+            
             out.println("<body>");
             out.println("<h2>Table JSp</h2>");
-            out.println("<p>Sedang mencoba table</p>");           
+            out.println("<p>Sedang mencoba table</p>");
             out.println("<table style='width:100%'>");
             out.println("<caption>");
             out.println("Monyhly savings");
@@ -76,6 +78,7 @@ public class TestServletTable extends HttpServlet {
             out.println("</table>");
             out.println(factory);
             out.println("</body>");
+            
             out.println("</html>");
         }
     }

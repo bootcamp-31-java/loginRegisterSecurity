@@ -23,10 +23,10 @@ public class RegionControllerTest {
     
     SessionFactory factory;
     IGeneralDAO<Region> irdao;
-
-    public RegionControllerTest(SessionFactory factory) {
-        irdao = new GeneralDAO<>(factory, Region.class);
-    }
+//
+//    public RegionControllerTest(SessionFactory factory) {
+//        irdao = new GeneralDAO<>(factory, Region.class);
+//    }
     
     public RegionControllerTest() {
     }
@@ -52,6 +52,7 @@ public class RegionControllerTest {
      */
     @Test
     public void testDelete() {
+        irdao.saveOrDelete(new Region(new BigDecimal("1"), "Ayu"), false);
     }
 
     /**

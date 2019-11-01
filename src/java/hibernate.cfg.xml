@@ -44,7 +44,7 @@ Contributor(s):
     <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
     <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
     <property name="hibernate.connection.username">system</property>
-    <property name="hibernate.connection.password">oracle31</property>
+    <property name="hibernate.connection.password">admin</property>
     <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
@@ -58,5 +58,7 @@ Contributor(s):
     <mapping class="models.Employee"/>
     <mapping class="models.Department"/>
     <mapping class="models.Country"/>
+    <mapping class="models.Account"/>
+    <mapping class="models.Status"/>
   </session-factory>
 </hibernate-configuration>

@@ -6,6 +6,7 @@
 package daos;
 
 import java.util.List;
+import models.Account;
 
 /**
  *
@@ -19,4 +20,9 @@ public interface IGeneralDAO<T> {
 
     boolean saveOrDelete(T t, boolean isSave);
     
+    List<Account> getPassByEmail(String email);
+        
+    boolean getToken(String token);
+    
+    Account getByEmail(String email);
 }

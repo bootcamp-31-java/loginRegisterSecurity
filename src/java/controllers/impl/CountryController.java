@@ -35,7 +35,7 @@ public class CountryController {
     }
     
     public String delete(String id){
-        if (icdao.saveOrDelete(new Country(id), true)) {
+        if (icdao.saveOrDelete(new Country(id), false)) {
             return "Delete Success";
         } else {
             return "Delete Failed";
